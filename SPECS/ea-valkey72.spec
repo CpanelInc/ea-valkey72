@@ -90,6 +90,8 @@ EOF
 %changelog
 * Wed Jan 08 2025 Cory McIntire <cory@cpanel.net> - 7.2.8-1
 - EA-12639: Update ea-valkey72 from v7.2.7 to v7.2.8
+	- (CVE-2024-46981) Lua script commands may lead to remote code execution. (#1513)
+	- (CVE-2024-51741) Denial-of-service due to malformed ACL selectors. (#1514)
 
 * Wed Oct 02 2024 Cory McIntire <cory@cpanel.net> - 7.2.7-1
 - EA-12442: Update ea-valkey72 from v7.2.6 to v7.2.7
