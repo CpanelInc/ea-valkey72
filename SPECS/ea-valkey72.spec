@@ -18,7 +18,7 @@
 Name:    ea-valkey72
 Vendor:  cPanel, Inc.
 Summary: Valkey
-Version: 7.2.8
+Version: 7.2.9
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4572 for more details
 %define release_prefix 1
 Release: %{release_prefix}%{?dist}.cpanel
@@ -88,6 +88,9 @@ EOF
 %attr(0755,root,root) /opt/cpanel/ea-valkey72/podman_entrypoint.sh
 
 %changelog
+* Thu Apr 24 2025 Cory McIntire <cory.mcintire@webpros.com> - 7.2.9-1
+- EA-12833: Update ea-valkey72 from v7.2.8 to v7.2.9
+
 * Wed Jan 08 2025 Cory McIntire <cory@cpanel.net> - 7.2.8-1
 - EA-12639: Update ea-valkey72 from v7.2.7 to v7.2.8
 	- (CVE-2024-46981) Lua script commands may lead to remote code execution. (#1513)
