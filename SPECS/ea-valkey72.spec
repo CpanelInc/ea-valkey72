@@ -90,6 +90,7 @@ EOF
 %changelog
 * Thu Apr 24 2025 Cory McIntire <cory.mcintire@webpros.com> - 7.2.9-1
 - EA-12833: Update ea-valkey72 from v7.2.8 to v7.2.9
+- (CVE-2025-21605) Limit output buffer for unauthenticated clients
 
 * Wed Jan 08 2025 Cory McIntire <cory@cpanel.net> - 7.2.8-1
 - EA-12639: Update ea-valkey72 from v7.2.7 to v7.2.8
