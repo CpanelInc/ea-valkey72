@@ -18,7 +18,7 @@
 Name:    ea-valkey72
 Vendor:  cPanel, Inc.
 Summary: Valkey
-Version: 7.2.13
+Version: 7.2.14
 # Doing release_prefix this way for Release allows for OBS-proof versioning, See EA-4572 for more details
 %define release_prefix 1
 Release: %{release_prefix}%{?dist}.cpanel
@@ -88,6 +88,9 @@ EOF
 %attr(0755,root,root) /opt/cpanel/ea-valkey72/podman_entrypoint.sh
 
 %changelog
+* Wed Jul 22 2026 EA4 Update Bot <cory.mcintire@webpros.com> - 7.2.14-1
+- EA-13511: Update ea-valkey72 from v7.2.13 to v7.2.14
+
 * Thu May 07 2026 EA4 Update Bot <cory.mcintire@webpros.com> - 7.2.13-1
 - EA-13426: Update ea-valkey72 from v7.2.12 to v7.2.13
 
